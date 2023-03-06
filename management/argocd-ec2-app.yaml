@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: 'capi-cluster/aws-ec2'
-    repoURL: '[Replace with your forked git repo URL]'
+    repoURL: 'https://github.com/amaheshwari21/eks-ec2-clusterapi-gitops'
     targetRevision: HEAD
     #helm:
      # valueFiles:
@@ -18,3 +18,4 @@ spec:
   syncPolicy:
     automated:
       allowEmpty: true
+      prune: true
